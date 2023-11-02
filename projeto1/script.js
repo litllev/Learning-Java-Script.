@@ -1,13 +1,11 @@
 function soma(value) {
-    var preco = parseFloat(document.getElementById('preco').textContent)
-    var qtd = document.getElementById('qtd').textContent
-    var total = preco * qtd;
-    console.log(qtd.textContent);
-    console.log(qtd);
-    console.log(total);
-    if (value === 1){
-       
+    let preco = parseFloat(document.querySelector('#preco').textContent)
 
+    let qtd = (document.querySelector('#qtd').textContent)
+
+    let valor = preco * qtd
+    if(value === 1 ){
+       document.querySelector('#qtd').textContent[1] = 2
     }
 
 }
